@@ -124,3 +124,16 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL='account:dashboard'
 LOGIN_URL = 'account:login'
 LOGOUT_URL ='account:logout'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# E-mail
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'Powerworker1234@gmail.com'
+EMAIL_HOST_PASSWORD = 'power8916'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
